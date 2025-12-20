@@ -1,0 +1,8 @@
+﻿  PPP3.cpp
+C:\Users\Дмитрий\OneDrive\Рабочий стол\Project\-_labs\PPP3\PPP3\PPP3.cpp(34,36): warning C4101: ex: неиспользованная локальная переменная
+C:\Users\Дмитрий\OneDrive\Рабочий стол\Project\-_labs\PPP3\PPP3\PPP3.cpp(56,11): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+C:\Users\Дмитрий\OneDrive\Рабочий стол\Project\-_labs\PPP3\PPP3\PPP3.cpp(72,11): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+C:\Users\Дмитрий\OneDrive\Рабочий стол\Project\-_labs\PPP3\PPP3\PPP3.cpp(88,11): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+C:\Users\Дмитрий\OneDrive\Рабочий стол\Project\-_labs\PPP3\PPP3\PPP3.cpp(147,32): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\Дмитрий\OneDrive\Рабочий стол\Project\-_labs\PPP3\PPP3\PPP3.cpp(162,22): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+  PPP3.vcxproj -> C:\Users\Дмитрий\OneDrive\Рабочий стол\Project\-_labs\PPP3\x64\Debug\PPP3.exe

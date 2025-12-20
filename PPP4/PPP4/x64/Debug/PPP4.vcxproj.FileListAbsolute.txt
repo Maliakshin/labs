@@ -1,0 +1,5 @@
+C:\Users\Дмитрий\OneDrive\Рабочий стол\Project\-_labs\PPP4\PPP4\x64\Debug\PPP4.vcxproj.AssemblyReference.cache
+C:\Users\Дмитрий\OneDrive\Рабочий стол\Project\-_labs\PPP4\PPP4\x64\Debug\PPP4.okno.resources
+C:\Users\Дмитрий\OneDrive\Рабочий стол\Project\-_labs\PPP4\PPP4\x64\Debug\PPP4.vcxproj.GenerateResource.cache
+C:\Users\Дмитрий\OneDrive\Рабочий стол\Project\-_labs\PPP4\PPP4\x64\Debug\PPP4.menu.resources
+C:\Users\Дмитрий\OneDrive\Рабочий стол\Project\-_labs\PPP4\PPP4\x64\Debug\PPP4.spreadsheet.resources
