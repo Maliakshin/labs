@@ -19,9 +19,7 @@ namespace PPP4 {
 		{
 			InitializeComponent();
 			setdata();
-			// 
-			//TODO: добавьте код конструктора
-			//
+
 		}
 
 	protected:
@@ -76,14 +74,20 @@ namespace PPP4 {
 	private: System::Windows::Forms::Label^ label27;
 	private: System::Windows::Forms::Label^ label28;
 	private: System::Windows::Forms::OpenFileDialog^ openFileDialog1;
-	private: System::Windows::Forms::DataGridView^ dataGridView1;
+
 	private: System::Windows::Forms::Button^ button5;
+	private: System::Windows::Forms::Button^ button6;
+	private: System::Windows::Forms::Button^ button7;
+
+
+
+
 
 	private:
 		/// <summary>
 		/// Обязательная переменная конструктора.
 		/// </summary>
-		System::ComponentModel::Container ^components;
+		System::ComponentModel::Container^ components;
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
@@ -133,12 +137,12 @@ namespace PPP4 {
 			this->label27 = (gcnew System::Windows::Forms::Label());
 			this->label28 = (gcnew System::Windows::Forms::Label());
 			this->openFileDialog1 = (gcnew System::Windows::Forms::OpenFileDialog());
-			this->dataGridView1 = (gcnew System::Windows::Forms::DataGridView());
 			this->button5 = (gcnew System::Windows::Forms::Button());
+			this->button6 = (gcnew System::Windows::Forms::Button());
+			this->button7 = (gcnew System::Windows::Forms::Button());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->numericUpDown1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->numericUpDown2))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->numericUpDown3))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// label7
@@ -435,7 +439,7 @@ namespace PPP4 {
 			// numericUpDown2
 			// 
 			this->numericUpDown2->Location = System::Drawing::Point(256, 431);
-			this->numericUpDown2->Maximum = System::Decimal(gcnew cli::array< System::Int32 >(4) { 1215752192, 23, 0, 0 });
+			this->numericUpDown2->Maximum = System::Decimal(gcnew cli::array< System::Int32 >(4) { 365, 0, 0, 0 });
 			this->numericUpDown2->Minimum = System::Decimal(gcnew cli::array< System::Int32 >(4) { 1, 0, 0, 0 });
 			this->numericUpDown2->Name = L"numericUpDown2";
 			this->numericUpDown2->Size = System::Drawing::Size(120, 20);
@@ -547,19 +551,11 @@ namespace PPP4 {
 			// 
 			this->openFileDialog1->FileName = L"openFileDialog1";
 			// 
-			// dataGridView1
-			// 
-			this->dataGridView1->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
-			this->dataGridView1->Location = System::Drawing::Point(94, 457);
-			this->dataGridView1->Name = L"dataGridView1";
-			this->dataGridView1->Size = System::Drawing::Size(282, 108);
-			this->dataGridView1->TabIndex = 62;
-			// 
 			// button5
 			// 
 			this->button5->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->button5->Location = System::Drawing::Point(544, 484);
+			this->button5->Location = System::Drawing::Point(672, 485);
 			this->button5->Name = L"button5";
 			this->button5->Size = System::Drawing::Size(255, 36);
 			this->button5->TabIndex = 63;
@@ -567,13 +563,38 @@ namespace PPP4 {
 			this->button5->UseVisualStyleBackColor = true;
 			this->button5->Click += gcnew System::EventHandler(this, &menu::button5_Click);
 			// 
+			// button6
+			// 
+			this->button6->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->button6->Location = System::Drawing::Point(396, 485);
+			this->button6->Name = L"button6";
+			this->button6->Size = System::Drawing::Size(255, 36);
+			this->button6->TabIndex = 64;
+			this->button6->Text = L"Вывести данные";
+			this->button6->UseVisualStyleBackColor = true;
+			this->button6->Click += gcnew System::EventHandler(this, &menu::button6_Click);
+			// 
+			// button7
+			// 
+			this->button7->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->button7->Location = System::Drawing::Point(79, 479);
+			this->button7->Name = L"button7";
+			this->button7->Size = System::Drawing::Size(255, 48);
+			this->button7->TabIndex = 65;
+			this->button7->Text = L"Просмотр и редактирование пользователей";
+			this->button7->UseVisualStyleBackColor = true;
+			this->button7->Click += gcnew System::EventHandler(this, &menu::button7_Click);
+			// 
 			// menu
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(1008, 601);
+			this->Controls->Add(this->button7);
+			this->Controls->Add(this->button6);
 			this->Controls->Add(this->button5);
-			this->Controls->Add(this->dataGridView1);
 			this->Controls->Add(this->label27);
 			this->Controls->Add(this->label28);
 			this->Controls->Add(this->label25);
@@ -612,21 +633,23 @@ namespace PPP4 {
 			this->Controls->Add(this->label2);
 			this->Controls->Add(this->button1);
 			this->Name = L"menu";
+			this->RightToLeft = System::Windows::Forms::RightToLeft::No;
 			this->Text = L"menu";
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->numericUpDown1))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->numericUpDown2))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->numericUpDown3))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
 		}
 #pragma endregion
 
-		private:System::Void button1_Click(System::Object^ sender, System::EventArgs^ e);
-		private:System::Void button2_Click(System::Object^ sender, System::EventArgs^ e);
-		private:System::Void button3_Click(System::Object^ sender, System::EventArgs^ e);
-		private:System::Void button4_Click(System::Object^ sender, System::EventArgs^ e);
-		private:System::Void button5_Click(System::Object^ sender, System::EventArgs^ e);
+	private:System::Void button1_Click(System::Object^ sender, System::EventArgs^ e);
+	private:System::Void button2_Click(System::Object^ sender, System::EventArgs^ e);
+	private:System::Void button3_Click(System::Object^ sender, System::EventArgs^ e);
+	private:System::Void button4_Click(System::Object^ sender, System::EventArgs^ e);
+	private:System::Void button5_Click(System::Object^ sender, System::EventArgs^ e);
+	private:System::Void button6_Click(System::Object^ sender, System::EventArgs^ e);
+	private:System::Void button7_Click(System::Object^ sender, System::EventArgs^ e);
 	};
 }

@@ -28,6 +28,8 @@ public:
 	~hotel();
 	int new_client(roomtype type, int passport, string name, string surname, int days);
 	int free_rooms(roomtype type);
-	void guests();
+	vector <array<string, 4>> guests();
 	int get_profit(int passport);
+	roomtype get_roomtype(int passport);
+	void data_output();
 };

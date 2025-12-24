@@ -1,2 +1,54 @@
-﻿  hotel.cpp
-  PPP2_1.vcxproj -> C:\Users\Дмитрий\OneDrive\Рабочий стол\Project\-_labs\PPP2_1\x64\Debug\PPP2_1.exe
+﻿  PPP2_1.cpp
+C:\Users\Дмитрий\OneDrive\Рабочий стол\labs\PPP2_1\PPP2_1\PPP2_1.cpp(2,1): error C3872: 0xbb: этот символ невозможно использовать в идентификаторе
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\sal.h(2361,1): error C2144: синтаксическая ошибка: перед "int" требуется ";"
+  (компиляция исходного файла "PPP2_1.cpp")
+  
+C:\Users\Дмитрий\OneDrive\Рабочий стол\labs\PPP2_1\PPP2_1\PPP2_1.cpp(2,1): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Users\Дмитрий\OneDrive\Рабочий стол\labs\PPP2_1\PPP2_1\PPP2_1.cpp(4,1): error C3872: 0xbb: этот символ невозможно использовать в идентификаторе
+C:\Users\Дмитрий\OneDrive\Рабочий стол\labs\PPP2_1\PPP2_1\PPP2_1.cpp(4,7): error C2014: команда препроцессора не должна начинаться с пробела
+C:\Users\Дмитрий\OneDrive\Рабочий стол\labs\PPP2_1\PPP2_1\PPP2_1.cpp(7,1): error C2143: синтаксическая ошибка: отсутствие ";" перед "using namespace"
+C:\Users\Дмитрий\OneDrive\Рабочий стол\labs\PPP2_1\PPP2_1\PPP2_1.cpp(4,1): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Users\Дмитрий\OneDrive\Рабочий стол\labs\PPP2_1\PPP2_1\PPP2_1.cpp(4,1): error C2086: int п»ї: переопределение
+      C:\Users\Дмитрий\OneDrive\Рабочий стол\labs\PPP2_1\PPP2_1\PPP2_1.cpp(2,1):
+       см. объявление "п»ї"
+  
+C:\Users\Дмитрий\OneDrive\Рабочий стол\labs\PPP2_1\PPP2_1\PPP2_1.cpp(11,12): error C2011: roomtype: переопределение типа "enum"
+      C:\Users\Дмитрий\OneDrive\Рабочий стол\labs\PPP2_1\PPP2_1\roomtype.h(2,12):
+       см. объявление "roomtype"
+  
+C:\Users\Дмитрий\OneDrive\Рабочий стол\labs\PPP2_1\PPP2_1\PPP2_1.cpp(19,7): error C2011: guest: переопределение типа "class"
+      C:\Users\Дмитрий\OneDrive\Рабочий стол\labs\PPP2_1\PPP2_1\guest.h(7,7):
+       см. объявление "guest"
+  
+C:\Users\Дмитрий\OneDrive\Рабочий стол\labs\PPP2_1\PPP2_1\PPP2_1.cpp(49,7): error C2011: room: переопределение типа "class"
+      C:\Users\Дмитрий\OneDrive\Рабочий стол\labs\PPP2_1\PPP2_1\room.h(10,7):
+       см. объявление "room"
+  
+C:\Users\Дмитрий\OneDrive\Рабочий стол\labs\PPP2_1\PPP2_1\PPP2_1.cpp(84,7): error C2011: hotel: переопределение типа "class"
+      C:\Users\Дмитрий\OneDrive\Рабочий стол\labs\PPP2_1\PPP2_1\hotel.h(10,7):
+       см. объявление "hotel"
+  
+C:\Users\Дмитрий\OneDrive\Рабочий стол\labs\PPP2_1\PPP2_1\PPP2_1.cpp(322,3): error C2027: использование неопределенного типа "hotel"
+      C:\Users\Дмитрий\OneDrive\Рабочий стол\labs\PPP2_1\PPP2_1\hotel.h(10,7):
+       см. объявление "hotel"
+  
+C:\Users\Дмитрий\OneDrive\Рабочий стол\labs\PPP2_1\PPP2_1\PPP2_1.cpp(326,3): error C2027: использование неопределенного типа "hotel"
+      C:\Users\Дмитрий\OneDrive\Рабочий стол\labs\PPP2_1\PPP2_1\hotel.h(10,7):
+       см. объявление "hotel"
+  
+C:\Users\Дмитрий\OneDrive\Рабочий стол\labs\PPP2_1\PPP2_1\PPP2_1.cpp(329,3): error C2027: использование неопределенного типа "hotel"
+      C:\Users\Дмитрий\OneDrive\Рабочий стол\labs\PPP2_1\PPP2_1\hotel.h(10,7):
+       см. объявление "hotel"
+  
+C:\Users\Дмитрий\OneDrive\Рабочий стол\labs\PPP2_1\PPP2_1\PPP2_1.cpp(332,3): error C2027: использование неопределенного типа "hotel"
+      C:\Users\Дмитрий\OneDrive\Рабочий стол\labs\PPP2_1\PPP2_1\hotel.h(10,7):
+       см. объявление "hotel"
+  
+C:\Users\Дмитрий\OneDrive\Рабочий стол\labs\PPP2_1\PPP2_1\PPP2_1.cpp(335,3): error C2027: использование неопределенного типа "hotel"
+      C:\Users\Дмитрий\OneDrive\Рабочий стол\labs\PPP2_1\PPP2_1\hotel.h(10,7):
+       см. объявление "hotel"
+  
+C:\Users\Дмитрий\OneDrive\Рабочий стол\labs\PPP2_1\PPP2_1\PPP2_1.cpp(387,27): error C2027: использование неопределенного типа "hotel"
+      C:\Users\Дмитрий\OneDrive\Рабочий стол\labs\PPP2_1\PPP2_1\hotel.h(10,7):
+       см. объявление "hotel"
+  

@@ -18,5 +18,5 @@ public:
 	void new_guest(int passport, string name, string surname, int days);
 	int get_profit();
 	int get_passport();
-	void get_guest_info();
+	array<string, 4> get_guest_info();
 };

@@ -29,6 +29,31 @@ void hotel::Create(const std::string& name, int p1, int p2, int p3, int p4, int 
 	current = new hotel(name, p1, p2, p3, p4, p5, p6);
 }
 
+
+void hotel::data_output() {
+	array<string, 4> arr;
+	ofstream output("output.csv");
+	for (int i = 0; i < rooms.size(); i++) {
+		if (!rooms[i].free()) {
+			arr = rooms[i].get_guest_info();
+			output << arr[0]<<";" << arr[1] << ";" << arr[2] << ";" << arr[3] << "\n";
+		}
+	}
+	for (int i = 0; i < luxrooms.size(); i++) {
+		if (!luxrooms[i].free()) {
+			arr = luxrooms[i].get_guest_info();
+			output << arr[0] << ";" << arr[1] << ";" << arr[2] << ";" << arr[3] << "\n";
+		}
+	}
+	for (int i = 0; i < presidentrooms.size(); i++) {
+		if (!presidentrooms[i].free()) {
+			arr = presidentrooms[i].get_guest_info();
+			output << arr[0] << ";" << arr[1] << ";" << arr[2] << ";" << arr[3] << "\n";
+		}
+	}
+}
+
+
 int hotel::new_client(roomtype type, int passport, string name, string surname, int days) {
 	bool flag = false;
 	for (int i = 0; i < rooms.size(); i++) {
@@ -110,26 +135,46 @@ int hotel::new_client(roomtype type, int passport, string name, string surname, 
 	}
 
 }
-void hotel::guests() {// гости будут в файлике лежать
+vector <array<string, 4>> hotel::guests() {
+	vector <array<string, 4>> guests;
 	for (int i = 0; i < rooms.size(); i++) {
 		if (!rooms[i].free()) {
-			cout << "room standart:" << endl;
-			cout << i + 1 << endl;
-			rooms[i].get_guest_info();
+			guests.emplace_back(rooms[i].get_guest_info());
 		}
 	}
 	for (int i = 0; i < luxrooms.size(); i++) {
 		if (!luxrooms[i].free()) {
-			cout << "room lux:" << endl;
-			cout << i + 1 << endl;
-			luxrooms[i].get_guest_info();
+			guests.emplace_back(luxrooms[i].get_guest_info());
 		}
 	}
 	for (int i = 0; i < presidentrooms.size(); i++) {
 		if (!presidentrooms[i].free()) {
-			cout << "room president:" << endl;
-			cout << i + 1 << endl;
-			presidentrooms[i].get_guest_info();
+			guests.emplace_back(presidentrooms[i].get_guest_info());
+		}
+	}
+	return guests;
+}
+roomtype hotel::get_roomtype(int passport) {
+	for (int i = 0; i < rooms.size(); i++) {
+		if (!rooms[i].free()) {
+			if (passport == rooms[i].get_passport()) {
+				return roomtype::standart;
+			}
+		}
+	}
+	for (int i = 0; i < luxrooms.size(); i++) {
+		if (!luxrooms[i].free()) {
+			if (passport == luxrooms[i].get_passport()) {
+				return roomtype::lux;
+			}
+		}
+	}
+	for (int i = 0; i < presidentrooms.size(); i++) {
+		if (!presidentrooms[i].free()) {
+			cout << 12312 << endl;
+			if (passport == presidentrooms[i].get_passport()) {
+				return roomtype::president;
+			}
 		}
 	}
 }

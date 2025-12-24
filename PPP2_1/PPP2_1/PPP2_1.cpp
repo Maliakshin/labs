@@ -1,7 +1,6 @@
-<<<<<<< HEAD
+
 ﻿
 #include "hotel.h"
-=======
 ﻿#include <iostream>
 #include <string>
 #include <vector>
@@ -295,7 +294,6 @@ public:
 		cout << president_price << endl;
 	}
 };
->>>>>>> c623d10dfbf9d788e92de47a73e86928388951a7
 
 void menu(hotel*& hotel1) {
 	int variant;
@@ -341,8 +339,6 @@ void menu(hotel*& hotel1) {
 		break;
 	}
 }
-<<<<<<< HEAD
-=======
 int input(string x) {
 	string y;
 	int i = 0;
@@ -387,7 +383,6 @@ int getroomprice(roomtype type) {
 			break;
 	}
 }
->>>>>>> c623d10dfbf9d788e92de47a73e86928388951a7
 int main() {
 	hotel* hotel1 = new hotel();
 	while (1) {

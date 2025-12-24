@@ -24,6 +24,6 @@ int room::get_profit() {
 int room::get_passport() {
 	return client->get_passport();
 }
-void room::get_guest_info() {
-	client->get_info();
+array<string, 4> room::get_guest_info() {
+	return client->get_info();
 }

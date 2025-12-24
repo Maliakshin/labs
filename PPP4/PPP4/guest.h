@@ -4,6 +4,7 @@
 #include <fstream>
 #include "input.h"
 #include "roomtype.h"
+#include <array>
 class guest {
 private:
 	string name;
@@ -12,7 +13,7 @@ private:
 	int days;
 public:
 	guest(int set_passport, string name, string surname, int days);
-	void get_info();
+	array<string, 4>  get_info();
 	int get_days();
 	int get_passport();
 };

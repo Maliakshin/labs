@@ -1,6 +1,7 @@
 #include "menu.h"
 #include "hotel.h"
 #include "input.h"
+#include "password.h"
 #include <msclr/marshal.h>
 #include <msclr/marshal_cppstd.h>
 #include <string>
@@ -38,7 +39,7 @@ System::Void PPP4::menu::button1_Click(System::Object^ sender, System::EventArgs
 }
 System::Void PPP4::menu::inClient(roomtype type) {
     label22->Visible = true;
-    int b = hotel::current->new_client(type, Convert::ToInt32(numericUpDown3->Value), msclr::interop::marshal_as<std::string>(textBox2->Text), msclr::interop::marshal_as<std::string>(textBox2->Text), Convert::ToInt32(numericUpDown2->Value));
+    int b = hotel::current->new_client(type, Convert::ToInt32(numericUpDown3->Value), msclr::interop::marshal_as<std::string>(textBox2->Text), msclr::interop::marshal_as<std::string>(textBox1->Text), Convert::ToInt32(numericUpDown2->Value));
     if (b == 0) {
         label22->Text = "Этот паспорт уже был добавлен ранее";
     }
@@ -87,14 +88,15 @@ System::Void PPP4::menu::button5_Click(System::Object^ sender, System::EventArgs
             b = hotel::current->new_client(roomtype::president, Convert::ToInt32(StringArray[1]), string((gcnew marshal_context())->marshal_as<const char*>(StringArray[2])), string((gcnew marshal_context())->marshal_as<const char*>(StringArray[3])), Convert::ToInt32(StringArray[4]));
             break;
         }
-   	}//end while 
+   	}
 	reader->Close();
     update();
 
-	//MessageBox::Show(Convert::ToString(listData[1]->GetInitials().name));
-    //listData->Add(gcnew Data_(initials, date, address));
-	//dataGridView1->DataSource = listData;
-
-	//showdgv(n, dataGridView1);
-
+}
+System::Void PPP4::menu::button6_Click(System::Object^ sender, System::EventArgs^ e) {
+    hotel::current->data_output();
+}
+System::Void PPP4::menu::button7_Click(System::Object^ sender, System::EventArgs^ e) {
+    password^ newForm = gcnew password();
+    newForm->Show();
 }

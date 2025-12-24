@@ -1,3 +1,5 @@
-﻿  menu.cpp
-  guest.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
-  PPP4.vcxproj -> C:\Users\Дмитрий\OneDrive\Рабочий стол\Project\-_labs\PPP4\x64\Debug\PPP4.exe
+﻿  data.cpp
+  password.cpp
+  Создание кода...
+  data.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
+  PPP4.vcxproj -> C:\Users\Дмитрий\OneDrive\Рабочий стол\labs\PPP4\x64\Debug\PPP4.exe

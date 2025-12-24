@@ -116,20 +116,26 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Messaging" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="data.cpp" />
     <ClCompile Include="guest.cpp" />
     <ClCompile Include="hotel.cpp" />
     <ClCompile Include="input.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="menu.cpp" />
     <ClCompile Include="okno.cpp" />
+    <ClCompile Include="password.cpp" />
     <ClCompile Include="room.cpp" />
     <ClCompile Include="spreadsheet.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="data.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="guest.h" />
     <ClInclude Include="hotel.h" />
     <ClInclude Include="input.h" />
@@ -139,6 +145,9 @@
     <ClInclude Include="okno.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="password.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="room.h" />
     <ClInclude Include="roomtype.h" />
     <ClInclude Include="spreadsheet.h">
@@ -146,11 +155,17 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="data.resx">
+      <DependentUpon>data.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="menu.resx">
       <DependentUpon>menu.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="okno.resx">
       <DependentUpon>okno.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="password.resx">
+      <DependentUpon>password.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="spreadsheet.resx">
       <DependentUpon>spreadsheet.h</DependentUpon>
